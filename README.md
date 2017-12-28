@@ -6,4 +6,6 @@ This app parses Open Street Map Project data and offers a GPS like service to it
 
 The app takes one command line argument, the name of the '.osm' file to be parsed. The one included, 'usb.osm', is a map of Stony Brook University and the surrounding area.
 
+### Screenshots
+
 ![alt text](OSM.png?raw=true "Example Screenshot")
