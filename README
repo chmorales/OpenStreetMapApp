@@ -1,0 +1,27 @@
+Overview
+
+On launch, the main frame of the application will mostly be occupied by the map panel, 
+where users can drag the mouse to pan around the map and zoom in and out using the 
+scroll wheel. Other than the panel, the main frame will have a toolbar located above 
+the map panel, which will store buttons for searching the OSM via text and for getting 
+directions. When directions are being displayed, a side panel will appear 
+(BorderLayout.WEST) to house the “Directions” user interface.
+
+Directions
+Users can access directions in one of two ways, both involving the “Directions” button 
+located on the toolbar. If a user has already placed their pin on the map (clicked on 
+a point in the map) and then hit the “Directions” button, the “Directions” side panel 
+will appear and prompt for a start location. Once the start location has been set, 
+the “Directions” side panel will display step by step directions for the specified path. 
+	
+The other scenario is when the user has not clicked on the map yet and has no pin set 
+on the map panel and then clicks the “Directions” button. In this scenario, the panel 
+will show up with a text field for a start location and an end location, both to be 
+specified by the user. Once both are entered, the “Directions” panel will show step 
+by step directions for the specified path. 
+
+“Drive There” Mode
+When the user activates “Drive There” mode, the map panel will clearly highlight the 
+path of the directions specified by the user. It will also update the user’s location 
+as they progress along the path, as well as rerouting directions if they stray too far. 
+
