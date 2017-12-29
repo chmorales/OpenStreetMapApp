@@ -1,15 +1,15 @@
 package data;
 
 public class Bounds {
-    
+
     private double maxLatitude;
     private double maxLongitude;
     private double minLatitude;
     private double minLongitude;
-    
+
     private double cLon;
     private double cLat;
-    
+
     /**
      * Creates a new Bounds object with the 
      * @param maxLatitude
@@ -17,16 +17,16 @@ public class Bounds {
      * @param maxLongitude
      * @param minLongitude
      */
-    public Bounds(String maxLongitude, String minLongitude, 
-	    	  String maxLatitude, String minLatitude){
-	
-	this.maxLatitude = Double.parseDouble(maxLatitude);
-	this.minLatitude = Double.parseDouble(minLatitude);
-	this.maxLongitude = Double.parseDouble(maxLongitude);
-	this.minLongitude = Double.parseDouble(minLongitude);
-	
-	cLon = (this.maxLongitude + this.minLongitude)/2;
-	cLat = (this.maxLatitude + this.minLatitude)/2;
+    public Bounds(String maxLongitude, String minLongitude,
+                  String maxLatitude, String minLatitude){
+
+        this.maxLatitude = Double.parseDouble(maxLatitude);
+        this.minLatitude = Double.parseDouble(minLatitude);
+        this.maxLongitude = Double.parseDouble(maxLongitude);
+        this.minLongitude = Double.parseDouble(minLongitude);
+
+        cLon = (this.maxLongitude + this.minLongitude)/2;
+        cLat = (this.maxLatitude + this.minLatitude)/2;
     }
 
     /**
@@ -106,11 +106,11 @@ public class Bounds {
      * @param y
      */
     public void addOffset(double x, double y){
-	minLongitude -= x;
-	maxLongitude -= x;
-	minLatitude += y;
-	maxLatitude += y;
-	cLon = (this.maxLongitude + this.minLongitude)/2;
-	cLat = (this.maxLatitude + this.minLatitude)/2;
+        minLongitude -= x;
+        maxLongitude -= x;
+        minLatitude += y;
+        maxLatitude += y;
+        cLon = (this.maxLongitude + this.minLongitude)/2;
+        cLat = (this.maxLatitude + this.minLatitude)/2;
     }
 }
